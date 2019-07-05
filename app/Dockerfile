@@ -12,7 +12,7 @@ RUN go get -u github.com/go-delve/delve/cmd/dlv
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.11.0
+ENV MM_VERSION=5.12.1
 
 # Build argument to set Mattermost edition
 ARG edition=enterprise
