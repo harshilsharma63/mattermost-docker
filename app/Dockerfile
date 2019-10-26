@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.10
 
 RUN apk add --no-cache git make musl-dev go
 
@@ -12,7 +12,7 @@ RUN go get -u github.com/go-delve/delve/cmd/dlv
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.12.1
+ENV MM_VERSION=5.16.0
 
 # Build argument to set Mattermost edition
 ARG edition=enterprise
